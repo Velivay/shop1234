@@ -8,7 +8,7 @@ import javax.persistence.GeneratedValue;
 
 @Data
 @Entity
-public class Accaunt {
+public class Account {
     @Id
     @GeneratedValue
     private Long id;

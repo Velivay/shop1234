@@ -1,22 +1,18 @@
-package kg.mega.shop.models.entyty;
+package kg.mega.shop.models.dto;
 
+import kg.mega.shop.models.entyty.Account;
 import kg.mega.shop.models.enums.Role;
 import lombok.Data;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
 
 @Data
 @Entity
-public class User {
-    @Id
-    @GeneratedValue
+public class UserDto {
     private Long id;
     private String name;
     private Account account;
     private String address;
     private int number;
     private Role role;
-
 }
